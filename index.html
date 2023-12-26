@@ -245,13 +245,16 @@
           vsspbv.addEventListener('click', vsspbf);
 
       function vsstbf() {
+        let vss3v = document.getElementById("всс3").innerHTML;
         let vss8s=document.getElementById("vsstid8").value;
         alert(vss8s);
         alert(vss8s.length);  
         if(vss8s.length==0)
           {
                document.getElementById("всс7").style.display='none';
-               document.getElementById("всс8").style.display='none';    
+               document.getElementById("всс8").style.display='none';
+               vss3v=vss3v.substring(0, vss3v.length-1)+"?";
+               document.getElementById("всс3").innerHTML=vss3v;
           }
         else {
                document.getElementById("всс7").style.display='block';
