@@ -213,8 +213,15 @@
           }));
 
       function vsspbf() {
+        if (vssvv == 0) {
                document.getElementById("vsstid").style.display='block';
                document.getElementById("vsstbid").style.display='block';
+               vssvv = 1;
+            }
+        else {document.getElementById("vsstid").style.display='none';
+             document.getElementById("vsstbid").style.display='none';
+             vssvv = 0;    
+             }
           }
 
       var vsspbv = document.querySelector('.vssb');
@@ -227,6 +234,8 @@
       
       var vsstbv = document.querySelector('.vsstb');
           vsstbv.addEventListener('click', vsstbf);
+
+      var vssvv = 0;
       
      </script>
       
