@@ -228,7 +228,7 @@
                document.getElementById("vsstbid").style.display='none';
                document.getElementById("всс7").style.display='none';
                document.getElementById("всс8").style.display='none';
-               vss3v[vss3v.length-1]="?";
+               vss3v=vss3v.substring(0, vss3v.length-1)+"?";
             }
         else {
              document.getElementById("vsstid7").style.display='block';
@@ -236,8 +236,7 @@
              document.getElementById("vsstbid").style.display='block';
              document.getElementById("всс7").style.display='none';
              document.getElementById("всс8").style.display='none';
-             vss3v[vss3v.length-1]=" ";
-             alert(vss3v[vss3v.length-1]);
+             vss3v=vss3v.substring(0, vss3v.length-1)+" ";
              }
         document.getElementById("всс3").innerHTML=vss3v;
       }
