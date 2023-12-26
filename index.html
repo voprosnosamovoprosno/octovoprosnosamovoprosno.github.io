@@ -49,6 +49,12 @@
         font-size: x-large;
        }
 
+      .vsst {
+        font-size: x-large;
+        color: black;
+        display: none;
+       }
+
       .vsstb {
         font-size: x-large;
         color: black;
@@ -207,7 +213,6 @@
           }));
 
       function vsspbf() {
-               alert("vsspbf");
                document.getElementById("vsstid").style.display='block';
                document.getElementById("vsstbid").style.display='block';
           }
@@ -215,7 +220,14 @@
       var vsspbv = document.querySelector('.vssb');
           vsspbv.addEventListener('click', vsspbf);
 
-      alert("vss");
+      function vsstbf() {
+               alert("vsstbf");
+               document.getElementById("vsstid").style.display='none';
+               document.getElementById("vsstbid").style.display='none';
+          }
+      
+      var vsstbv = document.querySelector('.vsstb');
+          vsstbv.addEventListener('click', vsstbf);
       
      </script>
       
