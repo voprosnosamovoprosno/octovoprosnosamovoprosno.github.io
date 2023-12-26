@@ -220,7 +220,7 @@
           }));
 
       function vsspbf() {
-        let vss3v = document.getElementById("всс3").value;
+        let vss3v = document.getElementById("всс3").innerHTML;
         alert(vss3v);
         if (document.getElementById("vsstbid").style.display == 'block') 
            {
@@ -239,7 +239,7 @@
              document.getElementById("всс8").style.display='none';
              vss3v[vss3v.length-1]=" ";
              }
-        document.getElementById("всс3").value=vss3v;
+        document.getElementById("всс3").innerHTML=vss3v;
         alert(vss3v);
       }
 
