@@ -53,6 +53,10 @@
         font-size: x-large;
         color: black;
        }
+
+      .vsstdiv {
+        display: none;
+       }
       
       .vsst {
         font-size: x-large;
@@ -173,8 +177,8 @@
       <div id="всс1">????</div>
       <div id="всс2">??????</div>
       <div id="всс3">?????????</div>
-      <div id="всс7">????????????????</div>
-      <div id="всс8">????????????????</div>
+      <div id="всс7" class="vsstdiv"></div>
+      <div id="всс8" class="vsstdiv"></div>
       <input type="text" class="vsst" id="vsstid7">
       <input type="text" class="vsst" id="vsstid8">
       <button class="vsstb" id="vsstbid">????????????????</button>
@@ -220,6 +224,8 @@
                document.getElementById("vsstid7").style.display='none';
                document.getElementById("vsstid8").style.display='none';
                document.getElementById("vsstbid").style.display='none';
+               document.getElementById("всс7").style.display='none';
+               document.getElementById("всс8").style.display='none';
             }
         else {
              document.getElementById("vsstid7").style.display='block';
@@ -235,6 +241,8 @@
                document.getElementById("vsstid7").style.display='none';
                document.getElementById("vsstid8").style.display='none';
                document.getElementById("vsstbid").style.display='none';
+               document.getElementById("всс7").style.display='block';
+               document.getElementById("всс8").style.display='block';
                document.getElementById("всс7").innerHTML=document.getElementById("vsstid7").value;
                document.getElementById("всс8").innerHTML=document.getElementById("vsstid8").value;
           }
