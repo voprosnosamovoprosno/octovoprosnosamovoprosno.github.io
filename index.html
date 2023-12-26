@@ -112,7 +112,7 @@
     <label><input type="radio" id="vssr" name="?3?" value="надёжно?">???????надёжно?</label><br>
     <label><input type="radio" id="vssr" name="?3?" value="обиходно?">???????обиходно?</label><br>
 
-    <button class="vssb">????????????????</button>      
+    <button class="vssb" id="vsspb">????????????????</button>      
     
     <br>
     <br>
@@ -167,8 +167,8 @@
       <div id="всс1">????</div>
       <div id="всс2">??????</div>
       <div id="всс3">?????????</div>
-      <textarea class="vsstb" cols="28" rows="4"></textarea>
-      <button class="vsstb">????????????????</button>
+      <textarea class="vsstb" id="vsstid" cols="28" rows="4"></textarea>
+      <button class="vsstb" id="vsstbid">????????????????</button>
       <br>
       <div id="всс4">???</div>
       <div id="всс5">????вопросно</div>
@@ -205,7 +205,15 @@
           vss5.forEach(radio => radio.addEventListener('change', function() {
             document.getElementById("всс5").innerHTML=radio.value+"вопросно"
           }));
-    
+
+      function vsspbf() {
+               document.getElementById("vsstid").style.display='block';
+               document.getElementById("vsstbid").style.display='block';
+          }
+
+      var vsspbv = document.querySelector("vsspb");
+          vsspbv.addEventListener('click', vsspbf);
+     
      </script>
       
     </div>    
