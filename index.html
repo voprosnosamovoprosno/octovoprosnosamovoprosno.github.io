@@ -213,13 +213,13 @@
           }));
 
       function vsspbf() {
-        if (document.getElementById("vsstbid").style.display == 'none') {
-               document.getElementById("vsstid").style.display='block';
-               document.getElementById("vsstbid").style.display='block';
+        if (document.getElementById("vsstbid").style.display == 'block') {
+               document.getElementById("vsstid").style.display='none';
+               document.getElementById("vsstbid").style.display='none';
             }
         else {
-             document.getElementById("vsstid").style.display='none';
-             document.getElementById("vsstbid").style.display='none';  
+             document.getElementById("vsstid").style.display='block';
+             document.getElementById("vsstbid").style.display='block';  
              }
           }
 
@@ -233,9 +233,6 @@
       
       var vsstbv = document.querySelector('.vsstb');
           vsstbv.addEventListener('click', vsstbf);
-
-      document.getElementById("vsstid").style.display='none';
-      document.getElementById("vsstbid").style.display='none';
       
      </script>
       
