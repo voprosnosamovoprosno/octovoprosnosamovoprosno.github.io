@@ -230,7 +230,9 @@
         else {
              document.getElementById("vsstid7").style.display='block';
              document.getElementById("vsstid8").style.display='block';
-             document.getElementById("vsstbid").style.display='block';  
+             document.getElementById("vsstbid").style.display='block';
+             document.getElementById("всс7").style.display='none';
+             document.getElementById("всс8").style.display='none';
              }
           }
 
@@ -244,7 +246,7 @@
                document.getElementById("всс7").style.display='block';
                document.getElementById("всс8").style.display='block';
                document.getElementById("всс7").innerHTML=document.getElementById("vsstid7").value;
-               document.getElementById("всс8").innerHTML=document.getElementById("vsstid8").value;
+               document.getElementById("всс8").innerHTML=document.getElementById("vsstid8").value+"?";
           }
       
       var vsstbv = document.querySelector('.vsstb');
