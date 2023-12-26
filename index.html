@@ -246,17 +246,17 @@
 
       function vsstbf() {
         let vss8s=document.getElementById("vsstid8").innerHTML;
-        if(vss8s.length>0)
+        if(vss8s.length==0)
           {
+               document.getElementById("всс7").style.display='none';
+               document.getElementById("всс8").style.display='none';    
+          }
+        else {
                document.getElementById("всс7").style.display='block';
                document.getElementById("всс8").style.display='block';
                document.getElementById("всс7").innerHTML=document.getElementById("vsstid7").value;
                document.getElementById("всс8").innerHTML=document.getElementById("vsstid8").value+"?";
           }
-        else {
-               document.getElementById("всс7").style.display='none';
-               document.getElementById("всс8").style.display='none';      
-        }
         document.getElementById("vsstid7").style.display='none';
         document.getElementById("vsstid8").style.display='none';
         document.getElementById("vsstbid").style.display='none';
