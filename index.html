@@ -5,13 +5,22 @@
    <meta charset="utf-8">
 
    <title> 
-     ?октовопросносамовопросно?
+     ?вопросносамовопросно?
    </title>
 
    <style> 
 
-        input[type=radio]#vssr { 
-            accent-color: grey; 
+        input[type=radio]#vssr {
+            accent-color: grey;
+          }
+
+        input[type=checkbox]#vssc {
+            accent-color: grey;
+          }
+     
+        input:focus {
+            outline: grey;
+            border-color: grey;
           }
      
    </style>
@@ -30,28 +39,37 @@
       
       .vss4div {
          position: absolute;
-         top: 984px;
-         left: 358px;
+         top: 978px;
+         left: 342px;
          font-size: x-large;
          }     
       
       .vss5div {
          position: absolute;
-         top: 984px;
+         top: 978px;
          left: 584px;
+         font-size: x-large;
+         }
+
+      .vss6div {
+         position: absolute;
+         top: 978px;
+         left: 712px;
          font-size: x-large;
          }
 
       .vssdiv {
         position: absolute;
         top: 18px;
-        left: 444px;
+        left: 621px;
         font-size: x-large;
        }
-
-      .vssb {
+      
+      .vsspdiv {
+        position: absolute;
+        top: 18px;
+        left: 321px;
         font-size: x-large;
-        color: black;
        }
 
       .vsstdiv {
@@ -59,29 +77,56 @@
        }
       
       .vsst {
-        font-size: x-large;
+        font-size: large;
         color: black;
         display: none;
+        border-color: grey;
+        caret-color: black;
+        width: 286px;
        }
 
-      .vsstb {
-        font-size: x-large;
+      .vsssfrt {
+        font-size: large;
         color: black;
         display: none;
+        border-color: grey;
+        caret-color: black;
+        width: 286px;
        }
+
+      .vssasc {
+        font-size: x-large;
+        border-color: white;
+        outline: none;
+        color: black;
+      }
+
+      .vsscsc {
+        font-size: x-large;
+        border-color: white;
+        outline: none;
+        color: black;
+      }
+
+      .vssmc {
+        font-size: x-large;
+        border-color: white;
+        outline: none;
+        color: black;
+      }
       
    </style>
     
    <div class="vss03div">
      
-    <label><input type="radio" id="vssr" name="?0?" value="?влюблённо">?влюблённо?</label><br>
-    <label><input type="radio" id="vssr" name="?0?" value="?обнадёженно">?обнадёженно?</label><br>
-    <label><input type="radio" id="vssr" name="?0?" value="?признательно">?признательно?</label><br>
-    <label><input type="radio" id="vssr" name="?0?" value="?радостно">?радостно?</label><br>
-    <label><input type="radio" id="vssr" name="?0?" value="?очарованно">?очарованно?</label><br>
-    <label><input type="radio" id="vssr" name="?0?" value="?свободно">?свободно?</label><br>
-    <label><input type="radio" id="vssr" name="?0?" value="?новационно">?новационно?</label><br>
-    <label><input type="radio" id="vssr" name="?0?" value="?оптимистично">?оптимистично?</label><br>
+    <label ><input type="radio" id="vssr" name="?0?" value="?влюблённо">?влюблённо?</label><br>
+    <label ><input type="radio" id="vssr" name="?0?" value="?обнадёженно">?обнадёженно?</label><br>
+    <label ><input type="radio" id="vssr" name="?0?" value="?признательно">?признательно?</label><br>
+    <label ><input type="radio" id="vssr" name="?0?" value="?радостно">?радостно?</label><br>
+    <label ><input type="radio" id="vssr" name="?0?" value="?очарованно">?очарованно?</label><br>
+    <label ><input type="radio" id="vssr" name="?0?" value="?свободно">?свободно?</label><br>
+    <label ><input type="radio" id="vssr" name="?0?" value="?новационно">?новационно?</label><br>
+    <label ><input type="radio" id="vssr" name="?0?" value="?оптимистично">?оптимистично?</label><br>
 
     <label><input type="radio" id="vssr" name="?1?" value="склонно">???склонно?</label><br>
     <label><input type="radio" id="vssr" name="?1?" value="азартно">???азартно?</label><br>
@@ -122,10 +167,24 @@
     <label><input type="radio" id="vssr" name="?3?" value="надёжно?">???????надёжно?</label><br>
     <label><input type="radio" id="vssr" name="?3?" value="обиходно?">???????обиходно?</label><br>
 
-    <button class="vssb" id="vsspb">????????????????</button>      
-    
-    <br>
-    <br>
+    <div>????????????????</div>
+
+    <select class="vssmc" id="vssmid" size="12">
+          <option selected value="?селективно?">?селективно?</option>
+          <option disabled value="?аутентификационно?">?аутентификационно?</option>
+          <option disabled value="?мультимодально?">?мультимодально?</option>
+          <option disabled value="?о??????но?">?о??????но?</option>
+          <option disabled value="?в??????но?">?в??????но?</option>
+          <option disabled value="?о??????но?">?о??????но?</option>
+          <option disabled value="?персонализированно?">?персонализированно?</option>
+          <option disabled value="?р??????но?">?р??????но?</option>
+          <option disabled value="?облачно?">?облачно?</option>
+          <option disabled value="?соединительно?">?соединительно?</option>
+          <option disabled value="?н??????но?">?н??????но?</option>
+          <option disabled value="?о??????но?">?о??????но?</option>
+    </select>
+     
+    <br><br><br>
     <div>?email??voprosnosamovoprosno@gmail.com?</div>
     <div>?advcash??voprosnosamovoprosno@gmail.com?</div>
      
@@ -150,18 +209,100 @@
 
     <div class="vss5div">
 
-      <label><input type="radio" id="vssr" name="?5?" value="свое">???свое??субъектно?</label><br>
-      <label><input type="radio" id="vssr" name="?5?" value="архи">???архи??антропогенно?</label><br>
-      <label><input type="radio" id="vssr" name="?5?" value="мета">???мета??метафорично?</label><br>
-      <label><input type="radio" id="vssr" name="?5?" value="онто">???онто??органично?</label><br>
-      <label><input type="radio" id="vssr" name="?5?" value="вехо">???вехо??витально?</label><br>
-      <label><input type="radio" id="vssr" name="?5?" value="орто">???орто??обзорно?</label><br>
-      <label><input type="radio" id="vssr" name="?5?" value="пред">???пред??питательно?</label><br>
-      <label><input type="radio" id="vssr" name="?5?" value="рост">???рост??раритетно?</label><br>
-      <label><input type="radio" id="vssr" name="?5?" value="окто">???окто??оснащённо?</label><br>
-      <label><input type="radio" id="vssr" name="?5?" value="спец">???спец??сервисно?</label><br>
-      <label><input type="radio" id="vssr" name="?5?" value="ново">???ново??номинационно?</label><br>
-      <label><input type="radio" id="vssr" name="?5?" value="орфо">???орфо??организованно?</label><br>
+      <label><input type="radio" id="vssr" name="?5?" value="свое">???свое?</label><br>
+      <label><input type="radio" id="vssr" name="?5?" value="архи">???архи?</label><br>
+      <label><input type="radio" id="vssr" name="?5?" value="мета">???мета?</label><br>
+      <label><input type="radio" id="vssr" name="?5?" value="онто">???онто?</label><br>
+      <label><input type="radio" id="vssr" name="?5?" value="вехо">???вехо?</label><br>
+      <label><input type="radio" id="vssr" name="?5?" value="орто">???орто?</label><br>
+      <label><input type="radio" id="vssr" name="?5?" value="пред">???пред?</label><br>
+      <label><input type="radio" id="vssr" name="?5?" value="рост">???рост?</label><br>
+      <label><input type="radio" id="vssr" name="?5?" value="окто">???окто?</label><br>
+      <label><input type="radio" id="vssr" name="?5?" value="спец">???спец?</label><br>
+      <label><input type="radio" id="vssr" name="?5?" value="ново">???ново?</label><br>
+      <label><input type="radio" id="vssr" name="?5?" value="орфо">???орфо?</label><br>
+      <br>
+      <select class="vsscsc" id="vsscsid" size="13">
+          <option value="??">??</option>
+          <option value="?символьно?">?символьно?</option>
+          <option disabled value="?аудиословесно?">?аудиословесно?</option>
+          <option disabled value="?мелодично?">?мелодично?</option>
+          <option disabled value="?отфотографированно?">?отфотографированно?</option>
+          <option disabled value="?видеоэпизодно?">?видеоэпизодно?</option>
+          <option disabled value="?о??????но?">?о??????но?</option>
+          <option disabled value="?презентационно?">?презентационно?</option>
+          <option disabled value="?рисуночно?">?рисуночно?</option>
+          <option disabled value="?о??????но?">?о??????но?</option>
+          <option disabled value="?с??????но?">?с??????но?</option>
+          <option disabled value="?н??????но?">?н??????но?</option>
+          <option disabled value="?о??????но?">?о??????но?</option>
+      </select>
+      <br>
+      <select class="vssasc" id="vssasid" size="12">
+          <option value="?сделанно?">?сделанно?</option>
+          <option value="?аддитивно?">?аддитивно?</option>
+          <option disabled value="?м??????но?">?м??????но?</option>
+          <option disabled value="?о??????но?">?о??????но?</option>
+          <option disabled value="?в??????но?">?в??????но?</option>
+          <option disabled value="?о??????но?">?о??????но?</option>
+          <option disabled value="?п??????но?">?п??????но?</option>
+          <option disabled value="?редакционно?">?редакционно?</option>
+          <option disabled value="?о??????но?">?о??????но?</option>
+          <option disabled value="?с??????но?">?с??????но?</option>
+          <option disabled value="?н??????но?">?н??????но?</option>
+          <option value="?отменённо?">?отменённо?</option>
+      </select>
+     
+    </div>
+
+    <div class="vss6div">
+
+      <label><input type="checkbox" id="vssc" name="?6?" value="0">?субъектно?</label><br>
+      <label><input type="checkbox" id="vssc" name="?6?" value="1">?антропогенно?</label><br>
+      <label><input type="checkbox" id="vssc" name="?6?" value="2">?метафорично?</label><br>
+      <label><input type="checkbox" id="vssc" name="?6?" value="3">?органично?</label><br>
+      <label><input type="checkbox" id="vssc" name="?6?" value="4">?витально?</label><br>
+      <label><input type="checkbox" id="vssc" name="?6?" value="5">?обзорно?</label><br>
+      <label><input type="checkbox" id="vssc" name="?6?" value="6">?питательно?</label><br>
+      <label><input type="checkbox" id="vssc" name="?6?" value="7">?раритетно?</label><br>
+      <label><input type="checkbox" id="vssc" name="?6?" value="8">?оснащённо?</label><br>
+      <label><input type="checkbox" id="vssc" name="?6?" value="9">?сервисно?</label><br>
+      <label><input type="checkbox" id="vssc" name="?6?" value="10">?номинационно?</label><br>
+      <label><input type="checkbox" id="vssc" name="?6?" value="11">?организованно?</label><br>
+    
+    </div>
+
+    <div class="vsspdiv">
+
+      <div id="vssvss000" class="vsstdiv">
+         ?вопросно <br>
+         самовопросно <br>
+         самовопросно?
+      </div>
+      <br>
+      <div id="vssvss0" class="vsstdiv">???</div>
+      <div id="vssvss1" class="vsstdiv">????</div>
+      <div id="vssvss2" class="vsstdiv">??????</div>
+      <div id="vssvss3" class="vsstdiv">?????????</div>
+      <div id="vssvss7" class="vsstdiv" class="vsstdiv"></div>
+      <div id="vssvss8" class="vsstdiv"></div>
+      <br>
+      <div id="vssvss4" class="vsstdiv">???</div>
+      <div id="vssvss5" class="vsstdiv">????вопросно</div>
+      <div id="vssvss12" class="vsstdiv">самовопросно?</div>
+      <br>
+      <input readonly type="text" id="vssvsssfrt0" class="vsssfrt" placeholder="?субъектно?" autocapitalize="off">
+      <input readonly type="text" id="vssvsssfrt1" class="vsssfrt" placeholder="?антропогенно?" autocapitalize="off">
+      <input readonly type="text" id="vssvsssfrt2" class="vsssfrt" placeholder="?метафорично?" autocapitalize="off">
+      <input readonly type="text" id="vssvsssfrt3" class="vsssfrt" placeholder="?органично?" autocapitalize="off">
+      <input readonly type="text" id="vssvsssfrt4" class="vsssfrt" placeholder="?витально?" autocapitalize="off">
+      <input readonly type="text" id="vssvsssfrt5" class="vsssfrt" placeholder="?обзорно?" autocapitalize="off">
+      <input readonly type="text" id="vssvsssfrt6" class="vsssfrt" placeholder="?питательно?" autocapitalize="off">
+      <input readonly type="text" id="vssvsssfrt7" class="vsssfrt" placeholder="?раритетно?" autocapitalize="off">
+      <input readonly type="text" id="vssvsssfrt8" class="vsssfrt" placeholder="?оснащённо?" autocapitalize="off">
+      <input readonly type="text" id="vssvsssfrt9" class="vsssfrt" placeholder="?сервисно?" autocapitalize="off">
+      <input readonly type="text" id="vssvsssfrt10" class="vsssfrt" placeholder="?номинационно?" autocapitalize="off">
+      <input readonly type="text" id="vssvsssfrt11" class="vsssfrt" placeholder="?организованно?" autocapitalize="off">
     
     </div>
 
@@ -180,14 +321,28 @@
       <div id="всс7" class="vsstdiv"></div>
       <div id="всс8" class="vsstdiv"></div>
       
-      <input type="text" id="vsstid7" class="vsst">
-      <input type="text" id="vsstid8" class="vsst">
-      <button class="vsstb" id="vsstbid">????????????????</button>
+      <input type="text" id="vsstid7" class="vsst" autocapitalize="off">
+      <input type="text" id="vsstid8" class="vsst" autocapitalize="off">
       <br>
       <div id="всс4">???</div>
       <div id="всс5">????вопросно</div>
-      <div> самовопросно?</div>
-      
+      <div>самовопросно?</div>
+      <br>
+      <input type="text" id="vsssfrt0" class="vsssfrt" placeholder="?субъектно?" autocapitalize="off">
+      <input type="text" id="vsssfrt1" class="vsssfrt" placeholder="?антропогенно?" autocapitalize="off">
+      <input type="text" id="vsssfrt2" class="vsssfrt" placeholder="?метафорично?" autocapitalize="off">
+      <input type="text" id="vsssfrt3" class="vsssfrt" placeholder="?органично?" autocapitalize="off">
+      <input type="text" id="vsssfrt4" class="vsssfrt" placeholder="?витально?" autocapitalize="off">
+      <input type="text" id="vsssfrt5" class="vsssfrt" placeholder="?обзорно?" autocapitalize="off">
+      <input type="text" id="vsssfrt6" class="vsssfrt" placeholder="?питательно?" autocapitalize="off">
+      <input type="text" id="vsssfrt7" class="vsssfrt" placeholder="?раритетно?" autocapitalize="off">
+      <input type="text" id="vsssfrt8" class="vsssfrt" placeholder="?оснащённо?" autocapitalize="off">
+      <input type="text" id="vsssfrt9" class="vsssfrt" placeholder="?сервисно?" autocapitalize="off">
+      <input type="text" id="vsssfrt10" class="vsssfrt" placeholder="?номинационно?" autocapitalize="off">
+      <input type="text" id="vsssfrt11" class="vsssfrt" placeholder="?организованно?" autocapitalize="off">
+    
+    </div> 
+    
     <script>
       
       var vss0 = document.querySelectorAll('input[type=radio][name="?0?"]');
@@ -207,71 +362,266 @@
 
       var vss3 = document.querySelectorAll('input[type=radio][name="?3?"]');
           vss3.forEach(radio => radio.addEventListener('change', function() {
-            document.getElementById("всс3").innerHTML=radio.value
+            let vss3v=radio.value;
+            if (document.getElementById("всс8").style.display == 'block'
+               || document.getElementById("всс7").style.display == 'block')
+            { 
+                vss3v=vss3v.substring(0, vss3v.length-1);
+            }
+            document.getElementById("всс3").innerHTML=vss3v;
           }));
 
       var vss4 = document.querySelectorAll('input[type=radio][name="?4?"]');
           vss4.forEach(radio => radio.addEventListener('change', function() {
-            document.getElementById("всс4").innerHTML=radio.value
+            document.getElementById("всс4").innerHTML=radio.value;
           }));
 
       var vss5 = document.querySelectorAll('input[type=radio][name="?5?"]');
           vss5.forEach(radio => radio.addEventListener('change', function() {
             document.getElementById("всс5").innerHTML=radio.value+"вопросно"
           }));
+      
+      var vss6 = document.querySelectorAll('input[type=checkbox][name="?6?"]');
+          vss6.forEach(checkbox => checkbox.addEventListener('change', function() {
+            if (checkbox.checked==true)
+            {
+                 document.getElementById("vsssfrt"+checkbox.value).style.display='block';
+            }
+            else {
+                 document.getElementById("vsssfrt"+checkbox.value).style.display='none';
+            }
+          }));
 
-      function vsspbf() {
-        let vss3v = document.getElementById("всс3").innerHTML;
-        if (document.getElementById("vsstbid").style.display == 'block') 
+      function vssuarbf(vssrbn){
+          let vssrbl=document.getElementsByName(vssrbn);
+              for(let vssi=0; vssi<vssrbl.length; vssi++)
+                {    
+                    vssrbl[vssi].checked=false;
+                }
+      }
+      
+      function vsstif() {
+              let vsstil=document.activeElement;
+              if (vsstil.value!="")
+              {
+                   if (vsstil.value[0]!="?")
+                   {
+                        vsstil.value="?"+vsstil.value;
+                        vsstil.setSelectionRange(vsstil.value.length-1, vsstil.value.length-1);
+                   }
+                   if (vsstil.value[vsstil.value.length-1]!="?")
+                   {
+                        vsstil.value=vsstil.value+"?";
+                        vsstil.setSelectionRange(vsstil.value.length-1, vsstil.value.length-1);
+                   }
+              }
+      }
+      
+      var vssti=document.querySelector('vsssfrt');
+          vssti=addEventListener('input', vsstif);
+
+      function vssas1_1f()
+      {
+           document.getElementById("vsstid7").style.display='block';
+           document.getElementById("vsstid8").style.display='block';
+           document.getElementById("всс7").style.display='none';
+           document.getElementById("всс8").style.display='none';
+           let vss3tl=document.getElementById("всс3").innerHTML;
+           if (vss3tl[vss3tl.length-1]!="?")
            {
+                    vss3tl=vss3tl+"?";
+                    document.getElementById("всс3").innerHTML=vss3tl;
+           }
+      }
+      
+      document.getElementById("vsscsid").addEventListener('input', function(){
+          document.getElementById("vssasid").value="";
+      });
+
+      function vssas1f()
+      {
+               let vss8tl=document.getElementById("vsstid8").value;
+               let vss7tl=document.getElementById("vsstid7").value;
+               let vss3tl=document.getElementById("всс3").innerHTML;
+               document.getElementById("всс7").style.display='none';
+               document.getElementById("всс8").style.display='none';
+               if(vss8tl.length>2)
+               { 
+                   vss8tl=vss8tl.substring(1, vss8tl.length);
+                   document.getElementById("всс8").style.display='block';
+               }
+               else {
+                   vss8tl="";
+               }
+               if(vss7tl.length>2)
+               {
+                   if(vss8tl.length>2)
+                   {
+                       vss7tl=vss7tl.substring(1, vss7tl.length-1);
+                   }
+                   else {
+                       vss7tl=vss7tl.substring(1, vss7tl.length);
+                   }
+                   document.getElementById("всс7").style.display='block';
+               }
+               else {
+                   vss7tl="";
+               }
+               if(vss8tl.length>2 || vss7tl.length>2)
+               {
+                   vss3tl=vss3tl.substring(0, vss3tl.length-1);
+               }
+               else {
+                   if (vss3tl[vss3tl.length-1]!="?")
+                   {
+                       vss3tl=vss3tl+"?";
+                   }
+               }
+               document.getElementById("всс8").innerHTML=vss8tl;
+               document.getElementById("всс7").innerHTML=vss7tl;
+               document.getElementById("всс3").innerHTML=vss3tl;
                document.getElementById("vsstid7").style.display='none';
                document.getElementById("vsstid8").style.display='none';
-               document.getElementById("vsstbid").style.display='none';
-               document.getElementById("всс7").style.display='none';
-               document.getElementById("всс8").style.display='none';
-               vss3v=vss3v.substring(0, vss3v.length-1)+"?";
-            }
-        else {
-             document.getElementById("vsstid7").style.display='block';
-             document.getElementById("vsstid8").style.display='block';
-             document.getElementById("vsstbid").style.display='block';
-             document.getElementById("всс7").style.display='none';
-             document.getElementById("всс8").style.display='none';
-             vss3v=vss3v.substring(0, vss3v.length-1)+" ";
-             }
-        document.getElementById("всс3").innerHTML=vss3v;
       }
 
-      var vsspbv = document.querySelector('.vssb');
-          vsspbv.addEventListener('click', vsspbf);
+      function vssdf(){  
+              document.getElementById("всс0").innerHTML="???";
+              document.getElementById("всс1").innerHTML="????";
+              document.getElementById("всс2").innerHTML="??????";
+              document.getElementById("всс3").innerHTML="?????????";
+              document.getElementById("всс4").innerHTML="???";
+              document.getElementById("всс5").innerHTML="????вопросно";
+              document.getElementById("всс7").innerHTML="";
+              document.getElementById("всс8").innerHTML="";
+              document.getElementById("vsstid8").value="";
+              document.getElementById("vsstid7").value="";
+              
+              document.getElementById("всс7").style.display='none';
+              document.getElementById("всс8").style.display='none';
+              document.getElementById("vsstid7").style.display='none';
+              document.getElementById("vsstid8").style.display='none';
 
-      function vsstbf() {
-        let vss3v = document.getElementById("всс3").innerHTML;
-        let vss8s=document.getElementById("vsstid8").value;
-        if(vss8s.length==0)
+              vssuarbf("?0?");
+              vssuarbf("?1?");
+              vssuarbf("?2?");
+              vssuarbf("?3?");
+              vssuarbf("?4?");
+              vssuarbf("?5?");
+              vssuarbf("?6?");
+        
+          for (let vssi=0; vssi<12; vssi++)
           {
-               document.getElementById("всс7").style.display='none';
-               document.getElementById("всс8").style.display='none';
-               vss3v=vss3v.substring(0, vss3v.length-1)+"?";
-               document.getElementById("всс3").innerHTML=vss3v;
+                  document.getElementById("vsssfrt"+vssi).style.display='none';
+                  document.getElementById("vsssfrt"+vssi).value="";
           }
-        else {
-               document.getElementById("всс7").style.display='block';
-               document.getElementById("всс8").style.display='block';
-               document.getElementById("всс7").innerHTML=document.getElementById("vsstid7").value;
-               document.getElementById("всс8").innerHTML=document.getElementById("vsstid8").value+"?";
-          }
-        document.getElementById("vsstid7").style.display='none';
-        document.getElementById("vsstid8").style.display='none';
-        document.getElementById("vsstbid").style.display='none';
       }
+
+      function vssas0_1f(){
+              document.getElementById("vssvss0").innerHTML=document.getElementById("всс0").innerHTML;
+              document.getElementById("vssvss1").innerHTML=document.getElementById("всс1").innerHTML;
+              document.getElementById("vssvss2").innerHTML=document.getElementById("всс2").innerHTML;
+              document.getElementById("vssvss3").innerHTML=document.getElementById("всс3").innerHTML;
+              document.getElementById("vssvss4").innerHTML=document.getElementById("всс4").innerHTML;
+              document.getElementById("vssvss5").innerHTML=document.getElementById("всс5").innerHTML;
+              document.getElementById("vssvss7").innerHTML=document.getElementById("всс7").innerHTML;
+              document.getElementById("vssvss8").innerHTML=document.getElementById("всс8").innerHTML;
+            
+              document.getElementById("vssvss000").style.display='block';
+              document.getElementById("vssvss0").style.display='block';
+              document.getElementById("vssvss1").style.display='block';
+              document.getElementById("vssvss2").style.display='block';
+              document.getElementById("vssvss3").style.display='block';
+              document.getElementById("vssvss4").style.display='block';
+              document.getElementById("vssvss5").style.display='block';
+              document.getElementById("vssvss12").style.display='block';
+              if (document.getElementById("всс7").style.display=='block')
+              {
+                  document.getElementById("vssvss7").style.display='block';
+                  document.getElementById("vssvss8").style.display='block';
+              }
+              for (let vssi=0; vssi<12; vssi++)
+              {
+                  document.getElementById("vssvsssfrt"+vssi).value=document.getElementById("vsssfrt"+vssi).value;
+                  document.getElementById("vssvsssfrt"+vssi).style.display=document.getElementById("vsssfrt"+vssi).style.display;
+              }
+              vssdf();
+      }
+
+      function vssas0_11f()
+      {
+              document.getElementById("vssvss000").innerHTML="";
+              document.getElementById("vssvss0").innerHTML="";
+              document.getElementById("vssvss1").innerHTML="";
+              document.getElementById("vssvss2").innerHTML="";
+              document.getElementById("vssvss3").innerHTML="";
+              document.getElementById("vssvss4").innerHTML="";
+              document.getElementById("vssvss5").innerHTML="";
+              document.getElementById("vssvss7").innerHTML="";
+              document.getElementById("vssvss8").innerHTML="";
+              document.getElementById("vssvss12").innerHTML="";
+            
+              document.getElementById("vssvss000").style.display='none';
+              document.getElementById("vssvss0").style.display='none';
+              document.getElementById("vssvss1").style.display='none';
+              document.getElementById("vssvss2").style.display='none';
+              document.getElementById("vssvss3").style.display='none';
+              document.getElementById("vssvss4").style.display='none';
+              document.getElementById("vssvss5").style.display='none';
+              document.getElementById("vssvss7").style.display='none';
+              document.getElementById("vssvss8").style.display='none';
+              document.getElementById("vssvss12").style.display='none';
+              
+              for (let vssi=0; vssi<12; vssi++)
+              {
+                  document.getElementById("vssvsssfrt"+vssi).value="";
+                  document.getElementById("vssvsssfrt"+vssi).style.display='none';
+              }
+              vssdf();
+      }
+  
+      document.getElementById("vssasid").addEventListener('input', function(){
+          if(this.value=="?сделанно?")
+          {
+              if(document.getElementById("vsscsid").value=="??")
+              {
+                   vssas1f();
+              }
+              if(document.getElementById("vsscsid").value=="?символьно?")
+              {
+                   vssas1f();
+              }
+          }
+          if(this.value=="?аддитивно?")
+          {
+              if(document.getElementById("vsscsid").value=="??")
+              {
+                  vssas0_1f();       
+              }
+              if(document.getElementById("vsscsid").value=="?символьно?")
+              {  
+                  vssas1_1f();
+              }
+          }
+          if(this.value=="?отменённо?")
+          {
+              if(document.getElementById("vsscsid").value=="??")
+              {
+                  vssas0_11f();
+
+                  document.getElementById("vsstid8").value="";
+                  document.getElementById("vsstid7").value="";
+                  vssas1f();
+              }
+              if(document.getElementById("vsscsid").value=="?символьно?")
+              {
+                  document.getElementById("vsstid8").value="";
+                  document.getElementById("vsstid7").value="";
+                  vssas1f();
+              }
+          } 
+      });
       
-      var vsstbv = document.querySelector('.vsstb');
-          vsstbv.addEventListener('click', vsstbf);
-      
-     </script>
-      
-    </div>    
+   </script>   
       
   </body>
 </html>
