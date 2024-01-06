@@ -1,6 +1,16 @@
 const http = require("http");
 const fs = require("fs");
 
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'content-type': 'text/html' })
+  fs.createReadStream('index.html').pipe(res)
+});
+
+server.listen(process.env.PORT || 3000);
+
+console.log('?вопросносамовопросно?');
+
+/*
 fs.readFile('./index.html', function (err, html) {
     if (err) {
         throw err; 
@@ -12,8 +22,6 @@ fs.readFile('./index.html', function (err, html) {
     }).listen(8000);
 });
 
-
-/*
 const host = 'localhost';
 const port = 8000;
 
