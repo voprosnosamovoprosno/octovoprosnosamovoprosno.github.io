@@ -1,10 +1,10 @@
 {
 "name": "octovoprosnosamovoprosno",
 "version": "8.12.12",
+"scripts": {
+    "start": "vss.js"
+  },
 "dependencies": {
     "express": "^4.17.1"
-  }
-"scripts": {
-    "start": "octovoprosnosamovoprosno.js"
   }
 }
