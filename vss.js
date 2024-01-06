@@ -1,9 +1,20 @@
 const http = require("http");
+const fs = require("fs");
 
-/*
 const host = 'localhost';
 const port = 8000;
 
+var server = http.createServer(function(request, response) {
+  response.writeHead(200, {'Content-Type': 'text/html'});
+  var myReadStream = fs.createReadStream(__dirname + '/index.html', 'utf8');
+  myReadStream.pipe(response);
+});
+
+server.listen(port, host);
+console.log('?вопросносамовопросно?');
+
+
+/*
 const requestListener = function (req, res) {
     res.writeHead(200);
     res.end("?вопросносамовопросно?");
@@ -13,7 +24,6 @@ const server = http.createServer(requestListener);
 server.listen(port, host, () => {
     console.log(`?вопросносамовопросно? http://${host}:${port}`);
 });
-*/
 
 const httpServer = http.createServer((req, res) => {
     console.log(`res: ${req.url}`);
@@ -59,3 +69,4 @@ function getContentType(url) {
             return "application/octet-stream";
     }
 }
+*/
