@@ -2,7 +2,7 @@
 "name": "octovoprosnosamovoprosno",
 "version": "8.12.12",
 "scripts": {
-    "start": "node" "vss.js"
+    "start": "node vss.js"
   },
 "dependencies": {
     "express": "^4.17.1"
