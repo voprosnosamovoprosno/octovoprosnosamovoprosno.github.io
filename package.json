@@ -2,6 +2,9 @@
 "name": "voprosnosamovoprosno",
 "version": "8.12.12",
 "dependencies": {
-  "express": "^4.17.1"
+    "express": "^4.17.1"
+  },
+"scripts": {
+    "start": "node app.js"
   }
 }
