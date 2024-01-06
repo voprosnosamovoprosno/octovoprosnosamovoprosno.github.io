@@ -1,6 +1,19 @@
 const http = require("http");
 const fs = require("fs");
 
+fs.readFile('./index.html', function (err, html) {
+    if (err) {
+        throw err; 
+    }       
+    http.createServer(function(request, response) {  
+        response.writeHeader(200, {"Content-Type": "text/html"});  
+        response.write(html);  
+        response.end();  
+    }).listen(8000);
+});
+
+
+/*
 const host = 'localhost';
 const port = 8000;
 
@@ -14,7 +27,7 @@ server.listen(port, host);
 console.log('?вопросносамовопросно?');
 
 
-/*
+
 const requestListener = function (req, res) {
     res.writeHead(200);
     res.end("?вопросносамовопросно?");
