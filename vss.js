@@ -16,7 +16,7 @@ const requestListener = function (req, res) {
             res.end(err);
             return;
         });
-};
+}
 
 const server = http.createServer(requestListener);
 server.listen(port, host, () => {
