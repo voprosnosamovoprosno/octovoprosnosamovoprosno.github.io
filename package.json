@@ -3,6 +3,6 @@
 "version": "8.12.12",
 "main": "vss.js",
 "scripts": {
-    "start": "node vss.js, index.html"
+    "start": "node vss.js index.html"
   }
 }
