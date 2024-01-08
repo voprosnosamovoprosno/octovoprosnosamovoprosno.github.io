@@ -1,47 +1,74 @@
 <!datatype html>
-<html> 
-  <head>
-
-   <meta charset="utf-8">
-
-   <title> 
-     ?октовопросносамовопросно?
-   </title>
-
-  </head>
-  <body>
-    
-   <style>  
-     
-    .vssulc {
-      font-size: medium;
-      list-style-type: none;
-    }
-     
-   </style>
-  
-    <ul id="vss0ulid" class="vssulc"></ul>
-    <ul id="vss1ulid" class="vssulc"></ul>
-   
-   <script>
-    const vss0=['?влюблённо?','?обнадёженно?','?признательно?','?радостно?','?очарованно?','?свободно?',
-               '?новационно?','?оптимистично?'];
-    const vss1=['?склонно?','?азартно?','?магично?','?отрадно?','?воодушевлённо?','?облюбованно?',
-               '?прилежно?','?решительно?','?оригинально?','?симпатично?','?наивно?','?осчастливленно?'];
-    
-    function vssncf(vssn, vssnv) {
-      let vssfl;
-      for(let vssi=0; vssi<vssn.length; vssi++){
-        vssfl = document.createElement("li");
-        vssfl.appendChild(document.createTextNode(vssn[vssi]));
-        vssnv.appendChild(vssfl);
-      }
-    }
-    
-    vssncf(vss0, document.getElementById("vss0ulid"));
-    vssncf(vss1, document.getElementById("vss1ulid")); 
- // alert('??');
-   </script>
-      
-  </body>
+<html><head><meta charset='utf-8'><title>?октовопросносамовопросно?</title></head>
+<body>  
+ <style>
+  .vssdc{font-size:x-large;}
+  .vss03dc{position:absolute;left:18;}
+  .vss7dc{position:absolute;left:281;top:968;}
+  .vss8dc{position:absolute;left:465;top:968;}
+  .vss9dc{position:absolute;left:564;top:968;}
+  .vss12dc{position:absolute;left:465;}
+ </style>
+ <div>
+  <div class='vss03dc'>
+   <div class='vssdc' id='vss0did'></div>
+   <div class='vssdc' id='vss1did'></div>
+   <div class='vssdc' id='vss2did'></div>
+   <div class='vssdc' id='vss3did'></div>
+   <div class='vssdc'>????????????????</div>
+  </div>
+  <div class='vss7dc'><div class='vssdc' id='vss7did'></div></div>
+  <div class='vss8dc'><div class='vssdc' id='vss8did'></div></div>
+  <div class='vss9dc'><div class='vssdc' id='vss9did'></div></div>
+  <div class='vss12dc'>
+   <div class='vssdc' id='vss12did'>
+    ?вопросно<br>
+    самовопросно<br>
+    самовопросно?<br><br>
+   </div>
+  </div>
+ </div>
+<script>
+  var vssav=[['?влюблённо?','?обнадёженно?','?признательно?','?радостно?','?очарованно?','?свободно?',
+              '?новационно?','?оптимистично?'],
+             ['?склонно?','?азартно?','?магично?','?отрадно?','?воодушевлённо?','?облюбованно?',
+              '?прилежно?','?решительно?','?оригинально?','?симпатично?','?наивно?','?осчастливленно?'],
+             ['?сознательно?','?аналитично?','?ментально?','?объективно?','?вариационно?','?осмысленно?',
+              '?понятно?','?рассудочно?','?осознанно?','?складно?','?насущно?','?озарённо?'],
+             ['?страстно?','?адаптивно?','?мотивационно?','?ободрённо?','?вдохновительно?','?ознаменованно?',
+              '?приверженно?','?радетельно?','?однозначно?','?стратегично?','?надёжно?','?обиходно?'],
+             ['?сенсетивно?','?академично?','?монументально?','?озеленённо?','?вестно?','?очно?',
+              '?плодовоягодно?','?рукодельно?','?отлаженно?','?справочно?','?насчитанно?','?оргконсультационно?'],
+             ['?славно?','?абсолютно?','?многозначительно?','?основоположно?','?вечно?','?определённо?',
+              '?превосходно?','?революционно?','?отменно?','?сильно?','?нынешно?','?отлично?'],
+             [''],
+             ['?системно?','?аутентично?','?медитационно?','?основательно?','?выбранно?','?оптимально?',
+              '?психологично?','?рефлексивно?','?очевидно?','?сущностно?','?настроенно?','?одухотворённо?'],
+             ['?свое?','?архи?','?мета?','?онто?','?вехо?','?орто?',
+              '?пред?','?рост?','?окто?','?спец?','?ново?','?орфо?'],
+             ['?субъектно?','?антропогенно?','?метафорично?','?органично?','?витально?','?обзорно?',
+              '?питательно?','?раритетно?','?оснащённо?','?сервисно?','?номинационно?','?организованно?'],
+             ['?символьно?','???аудиословесно?','???мелодично?','???отфотографированно?','???видеоэпизодно?','???о??????но?',
+              '???презентационно?','???рисуночно?','???о??????но?','???с??????но?','???н??????но?','???объёмно?'],
+             ['?селективно?','???аннотационно?','???мультимодально?','???о??????но?','???в??????но?','???о??????но?',
+              '???п??????но?','???р??????но?','???отправленно?','???соединительно?','???н??????но?','???отменённо?'],
+             ['???','????','??????','?????????','<br>','',
+              '???','????вопросно','самовопросно?']];
+  function vssncf(vssn, vssnv, vssvs){
+   let vssfl, vssil;
+   for(vssil=0;vssil<vssn.length;vssil++){
+    vssfl=document.createElement('div');
+    vssfl.innerHTML=vssvs+vssn[vssil];
+    vssfl.addEventListener('click',function(){alert(this.innerHTML);});
+    vssnv.appendChild(vssfl);}}
+  vssncf(vssav[0], document.getElementById('vss0did'),'');
+  vssncf(vssav[1], document.getElementById('vss1did'),'??');
+  vssncf(vssav[2], document.getElementById('vss2did'),'????');
+  vssncf(vssav[3], document.getElementById('vss3did'),'??????');
+  vssncf(vssav[7], document.getElementById('vss7did'),'');
+  vssncf(vssav[8], document.getElementById('vss8did'),'??');
+  vssncf(vssav[9], document.getElementById('vss9did'),'');
+  vssncf(vssav[12], document.getElementById('vss12did'),'');
+ </script>
+</body>
 </html>
