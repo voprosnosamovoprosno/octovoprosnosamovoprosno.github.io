@@ -14,26 +14,33 @@
    <style>  
      
     .vssulc {
-      font-size: large;
+      font-size: medium;
       list-style-type: none;
     }
      
    </style>
   
     <ul id="vss0ulid" class="vssulc"></ul>
+    <ul id="vss1ulid" class="vssulc"></ul>
    
    <script>
     const vss0=['?влюблённо?','?обнадёженно?','?признательно?','?радостно?','?очарованно?','?свободно?',
                '?новационно?','?оптимистично?'];
-
-    var vssulv = document.getElementById("vss0ulid");
-    var vssl;
-    for(let vssi=0; vssi<8; vssi++){
-        vssliv = document.createElement("li");
-        vssliv.appendChild(document.createTextNode(vss0[vssi]));
-        vssulv.appendChild(vssliv);
+    const vss1=['?склонно?','?азартно?','?магично?','?отрадно?','?воодушевлённо?','?облюбованно?',
+               '?прилежно?','?решительно?','?оригинально?','?симпатично?','?наивно?','?осчастливленно?'];
+    
+    function vssncf(vssn, vssnv) {
+      let vssfl;
+      for(let vssi=0; vssi<vssn.length; vssi++){
+        vssfl = document.createElement("li");
+        vssfl.appendChild(document.createTextNode(vssn[vssi]));
+        vssnv.appendChild(vssfl);
+      }
     }
-    alert('??');
+    
+    vssncf(vss0, document.getElementById("vss0ulid"));
+    vssncf(vss1, document.getElementById("vss1ulid")); 
+ // alert('??');
    </script>
       
   </body>
