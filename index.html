@@ -13,25 +13,25 @@
     
    <style>  
      
-    .vssulc{
-      font-size:x-large;
+    .vssulc {
+      font-size: large;
       list-style-type: none;
     }
      
    </style>
   
-    <ul id=vss0ulid class=vssulc></ul>
+    <ul id="vss0ulid" class="vssulc"></ul>
    
    <script>
     const vss0=['?влюблённо?','?обнадёженно?','?признательно?','?радостно?','?очарованно?','?свободно?',
                '?новационно?','?оптимистично?'];
-    alert(vss0[0]);
+
     var vssulv = document.getElementById("vss0ulid");
-    var vssliv;
-    for(let vssi=0; vssi<8; vssi+){
+    var vssl;
+    for(let vssi=0; vssi<8; vssi++){
         vssliv = document.createElement("li");
         vssliv.appendChild(document.createTextNode(vss0[vssi]));
-        vssulv.appendChild(li);
+        vssulv.appendChild(vssliv);
     }
     alert('??');
    </script>
