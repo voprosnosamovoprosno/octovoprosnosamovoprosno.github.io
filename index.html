@@ -1,8 +1,9 @@
-   <div class='vssdc' id='vss2did'></div>
-   <div class='vssdc' id='vss3did'></div>
+<!datatype html><html><head><meta charset='utf-8'><title>?октовопросносамовопросно?</title><style>input:focus{outline:grey;border-color:grey;}</style></head>
+<body><style>.vssdc{font-size:x-large;} .vss03dc{position:absolute;left:18;} .vss7dc{position:absolute;left:281;top:968;}.vss8dc{position:absolute;left:465;top:968;} .vss9dc{position:absolute;left:564;top:968;} .vss13dc{position:absolute;left:465;}.vsssc{font-size: x-large;border-color:white;outline:none;color:black;}</style>
+ <div>
+   <div class='vss03dc'><div class='vssdc' id='vss0did'></div><div class='vssdc' id='vss1did'></div><div class='vssdc' id='vss2did'></div><div class='vssdc' id='vss3did'></div>
    <div class='vssdc'>????????????????</div><br>
-   <select class='vsssc' id='vsss12id'></select>
-  </div>
+   <select class='vsssc' id='vsss12id'></select></div>
   <div class='vss7dc'>
    <div class='vssdc' id='vss7did'></div><br><br>
    <select class='vsssc' id='vsss13id'></select>
@@ -30,21 +31,17 @@
              ['?селективно?','???аннотационно?','???мультимодально?','???о??????но?','???в??????но?','???о??????но?','???п??????но?','???р??????но?','???отправленно?','???соединительно?','???н??????но?','???отменённо?'],
              ['?сердечно?','?аффективно?','?мыслительно?','?охотно?','???вовлечённо?','???оценочно?','???произвольно?','?ресурсно?','?объектно?','?сферично?','?наглядно?','?операционно?'],
              ['???','????','??????','?????????','','<br>','???','????вопросно','самовопросно?']];
-  function vssncf(vssn, vssnv, vssvs){
-   let vssfl, vssil;
-   for(vssil=0;vssil<vssn.length;vssil++){
-    vssfl=document.createElement('div');
-    vssfl.innerHTML=vssvs+vssn[vssil];
-    vssfl.addEventListener('click',function(){alert(this.innerHTML);});
-    vssnv.appendChild(vssfl);}}
-  vssncf(vssav[0], document.getElementById('vss0did'),'');     vssncf(vssav[1], document.getElementById('vss1did'),'??');
-  vssncf(vssav[2], document.getElementById('vss2did'),'????'); vssncf(vssav[3], document.getElementById('vss3did'),'??????');
-  vssncf(vssav[7], document.getElementById('vss7did'),'');     vssncf(vssav[8], document.getElementById('vss8did'),'??');
-  vssncf(vssav[9], document.getElementById('vss9did'),'');     vssncf(vssav[13], document.getElementById('vss13did'),'');
+  function vssncf(vssn, vssnv, vssvs){let vssfl, vssil;for(vssil=0;vssil<vssn.length;vssil++){vssfl=document.createElement('div');vssfl.innerHTML=vssvs+vssn[vssil];vssfl.addEventListener('click',function(){alert(this.innerHTML);});vssnv.appendChild(vssfl);}}
+  vssncf(vssav[0], document.getElementById('vss0did'),'');vssncf(vssav[1], document.getElementById('vss1did'),'??');vssncf(vssav[2], document.getElementById('vss2did'),'????');vssncf(vssav[3], document.getElementById('vss3did'),'??????');vssncf(vssav[7], document.getElementById('vss7did'),'');vssncf(vssav[8], document.getElementById('vss8did'),'??');vssncf(vssav[9], document.getElementById('vss9did'),'');vssncf(vssav[13], document.getElementById('vss13did'),'');
   function vssscf(vsssanv, vsssev, vssssndx){
-    let vsssnol, vsssil
+    let vsssnol, vsssil;
     for(vsssil=0;vsssil<vsssanv.length;vsssil++){
        vsssnol=new Option(vsssanv[vsssil],vsssanv[vsssil]);
+       vsssev.append(vsssnol);}
+    vsssev.selectedIndex=vssssndx;}
+  vssscf(vssav[12], document.getElementById('vsss12id'),0);vssscf(vssav[0], document.getElementById('vsss13id'),-1);vssscf(vssav[11], document.getElementById('vsss11id'),0);vssscf(vssav[10], document.getElementById('vsss10id'),0);
+</script></body></html>
+l=new Option(vsssanv[vsssil],vsssanv[vsssil]);
        vsssev.append(vsssnol);}
     vsssev.selectedIndex=vssssndx;}
   vssscf(vssav[12], document.getElementById('vsss12id'),0);
