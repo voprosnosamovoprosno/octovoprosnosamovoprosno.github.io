@@ -2,7 +2,7 @@
 <body><style>.vssdc{font-size:x-large;} .vss03dc{position:absolute;left:18;} .vss7dc{position:absolute;left:281;top:968;}.vss8dc{position:absolute;left:465;top:968;} .vss9dc{position:absolute;left:564;top:968;} .vss13dc{position:absolute;left:465;}.vsssc{font-size: x-large;border-color:white;outline:none;color:black;}</style>
  <div>
    <div class='vss03dc'><div class='vssdc' id='vss0did'></div><div class='vssdc' id='vss1did'></div><div class='vssdc' id='vss2did'></div><div class='vssdc' id='vss3did'></div>
-  <!--<div class='vssdc'>????????????????</div>-->
+   <div class='vssdc'>????????????????</div>
    <br>
    <select class='vsssc' id='vsss12id'></select></div>
   <div class='vss7dc'>
@@ -21,7 +21,7 @@
   var vssav=[['?влюблённо?','?обнадёженно?','?признательно?','?радостно?','?очарованно?','?свободно?','?новационно?','?оптимистично?'],
              ['?склонно?','?азартно?','?магично?','?отрадно?','?воодушевлённо?','?облюбованно?','?прилежно?','?решительно?','?оригинально?','?симпатично?','?наивно?','?осчастливленно?'],
              ['?сознательно?','?аналитично?','?ментально?','?объективно?','?вариационно?','?осмысленно?','?понятно?','?рассудочно?','?осознанно?','?складно?','?насущно?','?озарённо?'],
-             ['?страстно?','?адаптивно?','?мотивационно?','?ободрённо?','?вдохновительно?','?ознаменованно?','?приверженно?','?радетельно?','?однозначно?','?стратегично?','?надёжно?','?обиходно?','??????????'],
+             ['?страстно?','?адаптивно?','?мотивационно?','?ободрённо?','?вдохновительно?','?ознаменованно?','?приверженно?','?радетельно?','?однозначно?','?стратегично?','?надёжно?','?обиходно?'],
              ['?сенсетивно?','?академично?','?монументально?','?озеленённо?','?вестно?','?очно?','?плодовоягодно?','?рукодельно?','?отлаженно?','?справочно?','?насчитанно?','?оргконсультационно?'],
              ['?славно?','?абсолютно?','?многозначительно?','?основоположно?','?вечно?','?определённо?','?превосходно?','?революционно?','?отменно?','?сильно?','?нынешно?','?отлично?'],
              [''],
@@ -32,20 +32,9 @@
              ['?селективно?','???аннотационно?','???мультимодально?','???о??????но?','???в??????но?','???о??????но?','???п??????но?','???р??????но?','???отправленно?','???соединительно?','???н??????но?','???отменённо?'],
              ['?сердечно?','?аффективно?','?мыслительно?','?охотно?','???вовлечённо?','???оценочно?','???произвольно?','?ресурсно?','?объектно?','?сферично?','???наглядно?','???операционно?'],
              ['???','????','??????','?????????','','','<br>???','????вопросно','самовопросно?']];
-  function vssncf(vssn, vssnv, vssvs){let vssfl, vssil;for(vssil=0;vssil<vssn.length;vssil++){vssfl=document.createElement('div');vssfl.innerHTML=vssvs+vssn[vssil];vssfl.addEventListener('click',function(){alert(this.innerHTML);});vssnv.appendChild(vssfl);}}
+  function vssncf(vssn, vssnv, vssvs){let vssfl, vssil;for(vssil=0;vssil<vssn.length;vssil++){vssfl=document.createElement('div');vssfl.innerHTML=vssvs+vssn[vssil];vssnv.appendChild(vssfl);}}
   vssncf(vssav[0], document.getElementById('vss0did'),'');vssncf(vssav[1], document.getElementById('vss1did'),'??');vssncf(vssav[2], document.getElementById('vss2did'),'????');vssncf(vssav[3], document.getElementById('vss3did'),'??????');vssncf(vssav[7], document.getElementById('vss7did'),'');vssncf(vssav[8], document.getElementById('vss8did'),'??');vssncf(vssav[9], document.getElementById('vss9did'),'');vssncf(vssav[13], document.getElementById('vss13did'),'');
   function vssscf(vsssanv, vsssev, vssssndx){let vsssnol, vsssil;for(vsssil=0;vsssil<vsssanv.length;vsssil++){vsssnol=new Option(vsssanv[vsssil],vsssanv[vsssil]);vsssev.append(vsssnol);if(vsssanv[vsssil].substring(1,3)=='??'){vsssev.options[vsssil].disabled=true;vsssev.options[vsssil].value=vsssev.options[vsssil].text=vsssanv[vsssil].substring(2,vsssanv[vsssil].length);}}vsssev.selectedIndex=vssssndx;}
   vssscf(vssav[12], document.getElementById('vsss12id'),-1);vssscf(vssav[0], document.getElementById('vsss13id'),-1); vssscf(vssav[11], document.getElementById('vsss11id'),0); vssscf(vssav[10], document.getElementById('vsss10id'),0);
-  document.getElementById('vsss12id').addEventListener('change',function(){
-    let vsssnol;
-    let vsssl=document.getElementById('vsss13id');
-    let vssal=vssav[this.selectedIndex];
-    vsssl.options.length=0;
-    for(let vssil=0;vssil<vssal.length;vssil++){
-      vsssnol=new Option(vssal[vssil],vssal[vssil]);
-      vsssl.append(vsssnol);}
-    this.blur();
-    vsssl.selectedIndex=-1;
-    vsssl.size=vsssl.size;
-    vsssl.focus();});
+  document.getElementById('vsss12id').addEventListener('input',function(){let vsssnol,vsssl=document.getElementById('vsss13id'),vssal=vssav[this.selectedIndex];vsssl.options.length=0;for(let vssil=0;vssil<vssal.length;vssil++){vsssnol=new Option(vssal[vssil],vssal[vssil]);vsssl.append(vsssnol);}vsssl.selectedIndex=-1;vsssl.size=vsssl.size;vsssl.focus();});
 </script></body></html>
