@@ -1,19 +1,50 @@
-<!datatype html><html><head><meta charset="utf-8"><title>?вопросносамовопросно?</title>
-  </head><body><style>.vssddc{position:absolute;left:281;top:218;}.vssdc{font-size:35px;}.vssbc{font-size:xx-large;border-color:grey;outline:none;color:black;}</style>
-  <div class='vssddc'>
-    <div class='vssdc'>?вопросно?</div>
-    <div class='vssdc'>?самовопросно?</div>
-    <div class='vssdc'>?обнадёженно?</div>
-    <div class='vssdc'>?азартно?</div>
-    <div class='vssdc'>?осознанно?</div>
-    <div class='vssdc'>?приверженно?</div>
-    <div class='vssdc'>?спецвопросно?</div>
-    <div class='vssdc'>?самовопромно?</div>
-  <div/><br>
-  <button class='vssbc' id=vsswlbid>??????</button>
+<!datatype html><html><head><meta charset="utf-8"><title>?вопросносамовопросно?</title></head>
+  <body><style>.vssddc{position:absolute;left:84;top:128;}.vssdc{font-size:35px;}.vssbc{font-size:xx-large;border-color:grey;outline:none;color:black;}.vssbdc{position:absolute;left:48;top:1348;}</style>
+  <div>
+   <div class='vssddc'>
+    <div class='vssdc' id='0'></div>
+    <div class='vssdc' id='1'></div>
+    <div class='vssdc' id='2'></div>
+    <div class='vssdc' id='3'></div>
+    <div class='vssdc' id='4'></div>
+    <div class='vssdc' id='5'></div>
+    <div class='vssdc' id='6'></div>
+    <div class='vssdc' id='7'></div>
+    <div class='vssdc' id='8'></div>
+    <div class='vssdc' id='9'></div>
+    <div class='vssdc' id='10'></div>
+    <div class='vssdc' id='11'></div>
+   </div>
+   <div class='vssbdc'>
+    <button class='vssbc' id=vssblbid>??</button>
+    <button class='vssbc' id=vsswlbid>??????</button>
+    <button class='vssbc' id=vssflbid>??</button>
+   </div>
+  </div>
   <script>
-   var vsslav=[['признательно'],['симпатично'],['вариационно'],['обиходно']];
+   var vsslav=[['?вопросно?','?самовопросно?','?новационно?','?отрадно?','?ментально?','?радетельно?','?орфовопросно?','?самовопросно?'],
+               ['?вопросно?','?самовопросно?','?оптимистично?','?магично?','?рассудочно?','?однозначно?','?аутентично?','?вечно?','?академично?','?идеологично?','?метавопросно?','?самовопросно?'],
+               ['?вопросно?','?самовопросно?','?признательно?','?симпатично?','?вариационно?','?обиходно?','?ортовопросно?','?самовопросно?']];
+   var vssnrv=0;
+   function vssnf()
+    {if(vssnrv<0)
+       {vssnrv=vsslav.length-1;}
+     if(vssnrv>vsslav.length-1)
+       {vssnrv=0;}
+     for(let vssil=0;vssil<12;vssil++)
+      {if(vssil<vsslav[vssnrv].length)
+        {document.getElementById(vssil).innerHTML=vsslav[vssnrv][vssil];
+        }else{document.getElementById(vssil).innerHTML='';
+             }
+      };
+    }
+   vssnf();
+   document.getElementById('vssflbid').addEventListener('click',function()
+    {vssnrv++;
+    vssnf()});
+   document.getElementById('vssblbid').addEventListener('click',function()
+    {vssnrv=vssnrv-1;
+    vssnf()});  
    document.getElementById('vsswlbid').addEventListener('click',function()
     {window.location.assign('voprosnosamovoprosno.html')});
-  </script>
-</body></html>
+  </script></body></html>
