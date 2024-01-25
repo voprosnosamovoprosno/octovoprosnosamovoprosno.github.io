@@ -28,9 +28,9 @@
              ['?самовопросно?'],
              ['?самовопросно?'],
              ['?своевопросно?','?архивопросно?','?метавопросно?','?онтовопросно?','?веховопросно?','?ортовопросно?','?предвопросно?','?роствопросно?','?октовопросно?','?спецвопросно?','?нововопросно?','?орфовопросно?'],
-             ['?самовопросно?','?акцентированно?','???мультимодально?','???о??но?','???вопросно??вопросно?','???о??но?','???п??но?','???р??но?','???о??но?','?справочно?','???н??но?','???оперативно?'],
+             ['?самовопросно?','???а??но?','???м??но?','???о??но?','???в??но?','???о??но?','???п??но?','???р??но?','???о??но?','???с??но?','???н??но?','???оперативно?'],
              ['?субъектно?','?антропогенно?','?метафорично?','?органично?','?витально?','?обзорно?','?питательно?','?раритетно?','?оснащённо?','?сервисно?','?номинационно?','?организованно?'],
-             ['?сделанно?','???а??но?','???м??но?','???о??но?','???в??но?','???о??но?','???п??но?','???р??но?','???о??но?','???с??но?','???н??но?','?отменённо?'],
+             ['?сложенно?','?акцентированно?','???мультимодально?','???о??но?','???вопросно??вопросно?','???о??но?','???п??но?','???редакционно?','???о??но?','?справочно?','???н??но?','?отменённо?'],
              ];
    function vssscf(vsssanv, vsssev, vssssndx){let vsssnol,vsssil;vsssev.options.length=0;for(vsssil=0;vsssil<vsssanv.length;vsssil++){if(vsssanv==vssav[218]){vsssnol=new Option(vsssanv[vsssil]+vssav[14][vsssil],vsssanv[vsssil]);}else{vsssnol=new Option(vsssanv[vsssil],vsssanv[vsssil]);}vsssev.append(vsssnol);if(vsssanv[vsssil].substring(1,3)=='??'){vsssev.options[vsssil].disabled=true;vsssev.options[vsssil].value=vsssanv[vsssil].substring(2,vsssanv[vsssil].length);vsssev.options[vsssil].text=vsssev.options[vsssil].value;}}vsssev.selectedIndex=vssssndx;}
  
@@ -75,11 +75,11 @@
     document.getElementById('vssmdid').appendChild(vsssl);
     vssscf(vssav[15],document.getElementById('vssmosid'),-1);
     
-    vsssl=document.createElement('select');
-    vsssl.setAttribute('class','vsssc');
-    vsssl.setAttribute('id','vssmmsid');
-    document.getElementById('vssmdid').appendChild(vsssl);
-    vssscf(vssav[13],document.getElementById('vssmmsid'),0);
+    //vsssl=document.createElement('select');
+    //vsssl.setAttribute('class','vsssc');
+    //vsssl.setAttribute('id','vssmmsid');
+    //document.getElementById('vssmdid').appendChild(vsssl);
+    //vssscf(vssav[15],document.getElementById('vssmmsid'),-1);
    
     var vssmv=''; 
     function vssm0_0f()
@@ -88,24 +88,38 @@
         {document.getElementById(vssi).innerHTML=document.getElementById('100'+vssi).value;
          vssmv='0_0';
         }}}
-    document.getElementById('vssmosid').addEventListener('input',function()
-     {if(document.getElementById('vssmosid').selectedIndex==0&&document.getElementById('vssmmsid').selectedIndex==0)
+    document.getElementById('vssmosid').addEventListener('input',function()                                
+     {if(this.selectedIndex==0)
         {vssm0_0f();}
+      if(this.selectedIndex==1)
+        {vssm0_0f();
+         for(let vssi=0;vssi<12;vssi++)
+           {document.getElementById(vssav[14][vssi]).style.display=document.getElementById(vssav[14][vssi]+'?lno?').style.display='inline';
+           }
+        }
+      if(this.selectedIndex==9)
+        {window.location.assign('voprosnosamovoprosno9.html');
+        }
       if(document.getElementById('vssmosid').selectedIndex==11)
         {window.location.assign('voprosnosamovoprosno0.html');}
       this.selectedIndex=-1;
      });
-    document.getElementById('vssmmsid').addEventListener('input',function()
+  /*  document.getElementById('vssmmsid').addEventListener('input',function()
       {
-       if(this.selectedIndex==9)
-        {window.location.assign('voprosnosamovoprosno9.html');
+       if(this.selectedIndex==0)
+        {window.location.assign('voprosnosamovoprosno0.html');
         }
-       if(this.selectedIndex==1&&vssmv=='0_0')
-        {for(let vssi=0;vssi<12;vssi++)
+       if(this.selectedIndex==1)
+        {vssm0_0f();
+         for(let vssi=0;vssi<12;vssi++)
            {document.getElementById(vssav[14][vssi]).style.display=document.getElementById(vssav[14][vssi]+'?lno?').style.display='inline';
            }
         }
-        this.selectedIndex=0;
+        if(this.selectedIndex==9)
+        {window.location.assign('voprosnosamovoprosno9.html');
+        }
+        this.selectedIndex=-1;
       });
+  */
     //alert('?0?');
  </script></body></html>
