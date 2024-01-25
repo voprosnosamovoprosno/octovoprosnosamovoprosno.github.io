@@ -1,19 +1,7 @@
 <!datatype html><html><head><meta charset="utf-8"><title>?вопросносамовопросно?</title><link rel='shortcut icon' href='https://cdn.glitch.global/a1c30f5f-5a12-4404-a8ed-3b759d4c2f79/favicon.ico' type='image/x-icon'></head>
- <body><style>.vssdc{font-family:arial;font-size:28;}
-   .vsscntdc{position:absolute;left:375;top:28;}
-   .vssatdc{position:absolute;left:218;top:648;}
-   .vssmdc{position:absolute;left:375;top:1280;}
-   .vsssc{font-size:28;font-family:arial;width:0;border-color:white;outline:none;color:white;background-color:white;}
-   .vsstc{display:none;font-size:28;font-family:arial;color:black;border-color:grey;outline:none;caret-color:black;spellcheck:'false';autocapitalize:off;autocomplete:'off';width:318px;height:40px;}.vssbc{font-size:28;font-family:arial;outline:none;color:black;border-color:white;background-color:white;}</style>
- <div class='vssdc'>
-  <div class='vsscntdc' id='vsscntid'>
-   <div id='vss13did'></div>
-  </div>
-  <div class='vssatdc' id='vssatdid'></div>
-  <div class='vssmdc' id='vssmdid'></div> 
- </div>
- <script>
-   const vssav=[['?влюблённо?','?обнадёженно?','?признательно?','?радостно?','?очарованно?','?свободно?','?новационно?','?оптимистично?'],
+ <body><style>.vssdc{font-family:arial;font-size:28;}.vsscntdc{position:absolute;left:348;top:28;}.vssatdc{position:absolute;left:182;top:648;}.vssmdc{position:absolute;left:442;top:1280;}.vsssc{font-size:28;font-family:arial;width:0;border-color:white;outline:none;color:white;background-color:white;}.vsstc{display:none;font-size:28;font-family:arial;color:black;border-color:grey;outline:none;caret-color:black;spellcheck:'false';autocapitalize:off;autocomplete:'off';width:375px;height:40px;}.vssbc{font-size:28;font-family:arial;outline:none;color:black;border-color:white;background-color:white;}</style>
+ <div class='vssdc'><div class='vsscntdc' id='vsscntid'><div id='vss13did'></div></div><div class='vssatdc' id='vssatdid'></div><div class='vssmdc' id='vssmdid'></div> </div>
+ <script>const vssav=[['?влюблённо?','?обнадёженно?','?признательно?','?радостно?','?очарованно?','?свободно?','?новационно?','?оптимистично?'],
              ['?склонно?','?азартно?','?магично?','?отрадно?','?воодушевлённо?','?облюбованно?','?прилежно?','?решительно?','?ободрительно?','?симпатично?','?наивно?','?осчастливленно?'],
              ['?сознательно?','?аналитично?','?ментально?','?объективно?','?вариационно?','?осмысленно?','?понятно?','?рассудочно?','?осознанно?','?складно?','?насущно?','?озарённо?'],
              ['?страстно?','?адаптивно?','?мотивационно?','?одухотворённо?','?вдохновительно?','?ознаменованно?','?приверженно?','?радетельно?','?однозначно?','?стратегично?','?надёжно?','?обиходно?'],
@@ -31,138 +19,14 @@
              ['?сложенно?','?акцентированно?','???мультимодально?','???о??но?','???вопросно??вопросно?','???о??но?','???п??но?','???редакционно?','???о??но?','?справочно?','???н??но?','?отменённо?'],
              ];
    function vssscf(vsssanv, vsssev, vssssndx){let vsssnol,vsssil;vsssev.options.length=0;for(vsssil=0;vsssil<vsssanv.length;vsssil++){if(vsssanv==vssav[218]){vsssnol=new Option(vsssanv[vsssil]+vssav[14][vsssil],vsssanv[vsssil]);}else{vsssnol=new Option(vsssanv[vsssil],vsssanv[vsssil]);}vsssev.append(vsssnol);if(vsssanv[vsssil].substring(1,3)=='??'){vsssev.options[vsssil].disabled=true;vsssev.options[vsssil].value=vsssanv[vsssil].substring(2,vsssanv[vsssil].length);vsssev.options[vsssil].text=vsssev.options[vsssil].value;}}vsssev.selectedIndex=vssssndx;}
-   function vsscef(vssetv,vssecv,vsseidv,vssepidv,vssehv)
-   {let vssel=document.createElement(vssetv);
-        vssel.setAttribute('class',vssecv);
-        vssel.setAttribute('id',vsseidv);
-        document.getElementById(vssepidv).appendChild(vssel);
-        if(vssehv!='')
-        {vssel.innerHTML=vssehv;}
-    return vssel;
-   }
-   
-   let vssdl,vsssl,vsstl,vssll,vssbl;
-   
-   vsscef('div','vssdc','vss13vdid','vss13did','');
-   vsscef('button','vssbc','vss13vbid','vss13did','?вопросно?');
-   vsscef('div','vssdc','vss13vsdid','vss13did','');
-   vsscef('button','vssbc','vss13vsbid','vss13did','?самовопросно?');
-   
-   for(let vssi=0;vssi<13;vssi++)   
-     {vssdl=document.createElement('div'); 
-      vssdl.setAttribute('id',vssi);
-      document.getElementById('vss13did').appendChild(vssdl);
-   
-      vssbl=document.createElement('button');
-      vssbl.setAttribute('class','vssbc');
-      vssbl.setAttribute('id',1000+vssi);
-      vssbl.innerHTML='??';
-      document.getElementById('vss13did').appendChild(vssbl);
-    
-      if(vssi==10||vssi==11)
-        { vsstl=vsscef('input','vsstc','vsstid'+vssi,'vss13did','');
-          vsstl.setAttribute('type','text');
-          vsstl.setAttribute('autocapitalize','off');
-    
-         /* vsstl=document.createElement('input','text');
-          vsstl.setAttribute('class','vsstc');
-          vsstl.setAttribute('id',10000+vssi);
-          vsstl.setAttribute('autocapitalize','off');
-          document.getElementById('vss13did').appendChild(vsstl); 
-         */
-        }
-    
-        vsssl=document.createElement('select');
-        vsssl.setAttribute('class','vsssc');
-        vsssl.setAttribute('id',100+vssi);
-        document.getElementById('vss13did').appendChild(vsssl);
-        vssscf(vssav[vssi],document.getElementById(100+vssi),-1);
-       
-       if(vssi<12)
-       {
-          vsstl=document.createElement('input','text');
-          vsstl.setAttribute('class','vsstc');
-          vsstl.setAttribute('autocapitalize','off');
-          vsstl.setAttribute('id',vssav[14][vssi]);
-          document.getElementById('vssatdid').appendChild(vsstl);
-          vssll=document.createElement('label');
-          vssll.setAttribute('class','vssdc');
-          vssll.setAttribute('id',vssav[14][vssi]+'?lno?');
-          vssll.setAttribute('htmlFor',vssav[14][vssi]);
-          vssll.innerHTML=vssav[14][vssi];
-          document.getElementById('vssatdid').appendChild(vssll);
-          vsstl.style.display=vssll.style.display='none';
-       }
-     }
-   
-    vsscef('div','vssdc','vss13vssdid','vss13did','');
-    vsscef('button','vssbc','vss13vssbid','vss13did','?самовопросно?');
-   
-    vsscef('button','vssbc','vssmobid','vssmdid','??');
-    vsscef('select','vsssc','vssmosid','vssmdid','??');
-    vssscf(vssav[15],document.getElementById('vssmosid'),-1);
-   
-    document.querySelectorAll('.vssbc').forEach(vssbv=>vssbv.addEventListener('click',function()
-     {
-      let vsstidl='';
-      if(this.id=='1010'){vsstidl='vsstid10';}
-      if(this.id=='1011'){vsstidl='vsstid11';}
-      if(vsstidl!='')
-       {if(document.getElementById(vsstidl).style.display=='inline')
-          {if(document.getElementById(vsstidl).value.length>2)
-            {this.innerHTML=document.getElementById(vsstidl).value;
-            }else{this.innerHTML='??'}
-           document.getElementById(vsstidl).style.display='none';
-          }else{
-               document.getElementById(vsstidl).style.display='inline';
-               }
-        return;
-       }
-      let vsssidl;
-       if(this.id=='vssmobid')
-        {vsssidl='vssmosid';}
-       else{vsssidl=this.id-900;}
-       document.getElementById(vsssidl).size=document.getElementById(vsssidl).options.length;
-       document.getElementById(vsssidl).focus();     
-     }));                                 
-    
-    document.querySelectorAll('.vsstc').forEach(vsstv=>vsstv.addEventListener('input',function(){if(this.value!=""){if(this.value[0]!="?"){this.value="?"+this.value;this.setSelectionRange(this.value.length-1,this.value.length-1);}if(this.value[this.value.length-1]!="?"){this.value=this.value+"?";this.setSelectionRange(this.value.length-1,this.value.length-1);}}}));
-    
-    var vssmv=''; 
-    function vssm0_0f()
-     {if(vssmv=='')
-       {for(let vssi=0;vssi<13;vssi++)
-         {if(document.getElementById(1000+vssi).innerHTML!='??')
-             { document.getElementById(vssi).innerHTML=document.getElementById(1000+vssi).innerHTML;
-             }
-           document.getElementById(1000+vssi).style.display=document.getElementById(100+vssi).style.display='none';
-         }
-         document.getElementById('vss13vdid').innerHTML=document.getElementById('vss13vbid').innerHTML;
-         document.getElementById('vss13vsdid').innerHTML=document.getElementById('vss13vsbid').innerHTML;
-         document.getElementById('vss13vssdid').innerHTML=document.getElementById('vss13vssbid').innerHTML;
-         document.getElementById('vss13vbid').style.display=document.getElementById('vss13vsbid').style.display=document.getElementById('vss13vssbid').style.display='none';
-         vssmv='0_0';
-      }}
-    document.querySelectorAll('.vsssc').forEach(vsssv=>vsssv.addEventListener('input',function()
-     {if(this.id=='vssmosid')
-       {if(this.selectedIndex==0)
-         {vssm0_0f();}
-        if(this.selectedIndex==1)
-         {vssm0_0f();
-          for(let vssi=0;vssi<12;vssi++)
-           {document.getElementById(vssav[14][vssi]).style.display=document.getElementById(vssav[14][vssi]+'?lno?').style.display='inline';
-           }
-         }
-        if(this.selectedIndex==9)
-         {window.location.assign('voprosnosamovoprosno9.html');
-         }
-        if(document.getElementById('vssmosid').selectedIndex==11)
-         {window.location.assign('voprosnosamovoprosno0.html');}
-        this.selectedIndex=-1;
-       }
-       else{
-          document.getElementById(900+this.id*1).innerHTML=this.value;
-          }
-     }));
-    //alert('?8?');
+   function vsscef(vssetv,vssecv,vsseidv,vssepidv,vssehv){let vssel=document.createElement(vssetv);vssel.setAttribute('class',vssecv);vssel.setAttribute('id',vsseidv);document.getElementById(vssepidv).appendChild(vssel);if(vssehv!=''){vssel.innerHTML=vssehv;}return vssel;}
+   vsscef('div','vssdc','vss13vdid','vss13did','');vsscef('button','vssbc','vss13vbid','vss13did','?вопросно?');vsscef('div','vssdc','vss13vsdid','vss13did','');vsscef('button','vssbc','vss13vsbid','vss13did','?самовопросно?');
+   let vssdl,vsssl,vsstl,vssll,vssbl;  
+   for(let vssi=0;vssi<13;vssi++){vsscef('div','vssdc',vssi,'vss13did','');vsscef('button','vssbc',1000+vssi,'vss13did','??');if(vssi==10||vssi==11){vsstl=vsscef('input','vsstc','vsstid'+vssi,'vss13did','');vsstl.setAttribute('type','text');vsstl.setAttribute('autocapitalize','off');}vsscef('select','vsssc',100+vssi,'vss13did','');vssscf(vssav[vssi],document.getElementById(100+vssi),-1); if(vssi<12){vsstl=document.createElement('input','text');vsstl.setAttribute('class','vsstc');vsstl.setAttribute('autocapitalize','off');vsstl.setAttribute('id',vssav[14][vssi]);document.getElementById('vssatdid').appendChild(vsstl);vssll=document.createElement('label');vssll.setAttribute('class','vssdc');vssll.setAttribute('id',vssav[14][vssi]+'?lno?');vssll.setAttribute('htmlFor',vssav[14][vssi]);vssll.innerHTML=vssav[14][vssi];document.getElementById('vssatdid').appendChild(vssll);vsstl.style.display=vssll.style.display='none';}}
+   vsscef('div','vssdc','vss13vssdid','vss13did','');vsscef('button','vssbc','vss13vssbid','vss13did','?самовопросно?');vsscef('button','vssbc','vssmobid','vssmdid','??');vsscef('select','vsssc','vssmosid','vssmdid','??');vssscf(vssav[15],document.getElementById('vssmosid'),-1);
+   document.querySelectorAll('.vssbc').forEach(vssbv=>vssbv.addEventListener('click',function(){let vsstidl='';if(this.id=='1010'){vsstidl='vsstid10';}if(this.id=='1011'){vsstidl='vsstid11';}if(vsstidl!=''){if(document.getElementById(vsstidl).style.display=='inline'){if(document.getElementById(vsstidl).value.length>2){this.innerHTML=document.getElementById(vsstidl).value;}else{this.innerHTML='??'}document.getElementById(vsstidl).style.display='none';}else{document.getElementById(vsstidl).style.display='inline';}return;}let vsssidl;if(this.id=='vssmobid'){vsssidl='vssmosid';}else{vsssidl=this.id-900;}document.getElementById(vsssidl).size=document.getElementById(vsssidl).options.length;document.getElementById(vsssidl).focus();     }));                                 
+   document.querySelectorAll('.vsstc').forEach(vsstv=>vsstv.addEventListener('input',function(){if(this.value!=""){if(this.value[0]!="?"){this.value="?"+this.value;this.setSelectionRange(this.value.length-1,this.value.length-1);}if(this.value[this.value.length-1]!="?"){this.value=this.value+"?";this.setSelectionRange(this.value.length-1,this.value.length-1);}}}));
+   var vssmv='';function vssm0_0f(){if(vssmv==''){for(let vssi=0;vssi<13;vssi++){if(document.getElementById(1000+vssi).innerHTML!='??'){ document.getElementById(vssi).innerHTML=document.getElementById(1000+vssi).innerHTML;}document.getElementById(1000+vssi).style.display=document.getElementById(100+vssi).style.display='none';}document.getElementById('vss13vdid').innerHTML=document.getElementById('vss13vbid').innerHTML;document.getElementById('vss13vsdid').innerHTML=document.getElementById('vss13vsbid').innerHTML;document.getElementById('vss13vssdid').innerHTML=document.getElementById('vss13vssbid').innerHTML;document.getElementById('vss13vbid').style.display=document.getElementById('vss13vsbid').style.display=document.getElementById('vss13vssbid').style.display='none';document.getElementById('vsstid10').style.display=document.getElementById('vsstid11').style.display='none';vssmv='0_0';}}
+   document.querySelectorAll('.vsssc').forEach(vsssv=>vsssv.addEventListener('input',function(){if(this.id=='vssmosid'){if(this.selectedIndex==0){vssm0_0f();}if(this.selectedIndex==1){vssm0_0f();for(let vssi=0;vssi<12;vssi++){document.getElementById(vssav[14][vssi]).style.display=document.getElementById(vssav[14][vssi]+'?lno?').style.display='inline';}}if(this.selectedIndex==9){window.location.assign('voprosnosamovoprosno9.html');}if(document.getElementById('vssmosid').selectedIndex==11){window.location.assign('voprosnosamovoprosno0.html');}this.selectedIndex=-1;}else{document.getElementById(900+this.id*1).innerHTML=this.value;}}));
+   //alert('?8?');
  </script></body></html>
