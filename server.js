@@ -57,15 +57,27 @@ fastify.post("/", async (request, reply) => {
   console.log(request.body);
   if(request.body=='?вопросносамовопросно?')
     {let vssgml = await db.getMessages();
-     let vssmsl=[],vssri=0;
+     console.log('?vssmsgsqnt'+vssgml.length+'?');
+    
+    if(vssgml.length>812)
+       {for(let vssj=0;vssj<vssgml.length-12;vssj++)
+         {vssdml=await db.deleteMessage(vssgml[vssj].id);
+          console.log('?vssdelmesid'+vssgml[vssj].id+vssdml+'?');
+         }
+        vssgml = await db.getMessages();
+        console.log('?vssmsgsqnt'+vssgml.length+'?'); 
+       }
+            
+     let vssmsl=[];
      for(let vssi=0;vssi<vssgml.length;vssi++)
-       if(vssgml[vssi].message.substring(0,1)=='?')
-         {vssmsl.push(vssgml[vssi].message);}
-     console.log('?vssmessages'+vssmsl+'?');
-    // if(!data.chat) data.error = errorMessage;
-    // const status = data.error ? 400 : 200;
-    // reply.status(status).send(data);
-     vssri=randomInteger(0,vssmsl.length-1);
+       {if(vssgml[vssi].message.substring(0,1)=='?')
+         {vssmsl.push(vssgml[vssi].message);
+         }else{vssdml=await db.deleteMessage(vssgml[vssi].id);
+              console.log('?vssdelmesid'+vssgml[vssi].id+vssdml+'?');
+              }      
+       }        
+   //console.log('?vssmessages?'+'\n'+vssmsl);
+     let vssri=randomInteger(0,vssmsl.length-1);
      console.log('?vssrandom'+vssri+'?');
      return vssmsl[vssri];
     }
