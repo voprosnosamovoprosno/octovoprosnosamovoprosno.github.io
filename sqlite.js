@@ -55,20 +55,19 @@ module.exports = {
       console.error(dbError);
     }
     return success.changes > 0 ? true : false;
-  }
-}; 
-/*// Update message text
-  updateMessage: async (id, message) => {
+  },
+
+  vssupf: async (vssidfp, vsstxtfp) => {
     let success = false;
     try {
       success = await db.run(
-        "Update Messages SET message = ? WHERE id = ?",
-        message,
-        id
+        "Update vsst SET vsstxt = ? WHERE vssid = ?",
+        vsstxtfp,
+        vssidfp
       );
     } catch (dbError) {
       console.error(dbError);
     }
     return success.changes > 0 ? true : false;
   }
-*/
+};
