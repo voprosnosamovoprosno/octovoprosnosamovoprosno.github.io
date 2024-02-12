@@ -61,7 +61,7 @@ fastify.post("/", async (request, reply) => {
 });
 fastify.post("/vssadd", async (request, reply) => {
   let vssaml = await db.vssaddf(request.body);
-  console.log('?vssadd'+vssaml+'?');
+  console.log('?/vssaddvssaddf'+vssaml+'?');
   console.log(request.body);
   vssmsf();
 });
@@ -70,8 +70,12 @@ fastify.post("/vssup", async (request, reply) => {
   let vssidvl=vssavl[vssavl.length-1];
   vssavl.length=vssavl.length-1;
   let vsstxtvl=vssavl.join('\n')+'\n';
-  let vssaml = await db.vssupf(vssidvl,vsstxtvl);
-  console.log('?vssup'+vssidvl+vssaml+'?');
+  let vssaml = await db.vssaddf(vsstxtvl);
+  console.log('?/vssupvssaddf'+vssaml+'?');
+  if(vssaml){let vssdml=await db.vssdelf(vssidvl);
+  console.log('?/vssupvssdelf'+vssidvl+vssdml+'?');}
+  //let vssaml = await db.vssupf(vssidvl,vsstxtvl);
+  //console.log('?vssup'+vssidvl+vssaml+'?');
   vssmsf();
 });
 fastify.get("/vssxs", async (request, reply) => {
