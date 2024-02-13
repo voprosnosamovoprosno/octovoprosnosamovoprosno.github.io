@@ -70,12 +70,16 @@ fastify.post("/vssup", async (request, reply) => {
   let vssidvl=vssavl[vssavl.length-1];
   vssavl.length=vssavl.length-1;
   let vsstxtvl=vssavl.join('\n')+'\n';
-  let vssaml = await db.vssaddf(vsstxtvl);
-  console.log('?/vssupvssaddf'+vssaml+'?');
-  if(vssaml){let vssdml=await db.vssdelf(vssidvl);
-  console.log('?/vssupvssdelf'+vssidvl+vssdml+'?');}
-  //let vssaml = await db.vssupf(vssidvl,vsstxtvl);
-  //console.log('?vssup'+vssidvl+vssaml+'?');
+  let vssbvl=false;
+  console.log(vsstxtvl);
+  console.log(vssavl[vssavl.length-15]+vssavl[vssavl.length-16]+vssavl[vssavl.length-17]+vssavl[vssavl.length-18]);
+  if(vssavl[vssavl.length-15]=='?Vs812s?'&&vssavl[vssavl.length-16]=='?Vs812s?'&&vssavl[vssavl.length-17]=='?Vs812s?'&&vssavl[vssavl.length-18]=='?Vs812s?')
+   {console.log('?Vs812s?'+'?'+vssidvl+'?');
+   vssbvl=true;}
+  else{vssbvl = await db.vssaddf(vsstxtvl);
+       console.log('?/vssupvssaddf'+vssbvl+'?');}
+  if(vssbvl){let vssdml=await db.vssdelf(vssidvl);
+             console.log('?/vssupvssdelf'+vssidvl+vssdml+'?');}
   vssmsf();
 });
 fastify.get("/vssxs", async (request, reply) => {
