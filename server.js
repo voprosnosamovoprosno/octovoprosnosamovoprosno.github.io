@@ -72,9 +72,9 @@ fastify.post("/vssup", async (request, reply) => {
   let vsstxtvl=vssavl.join('\n')+'\n';
   let vssbvl=false;
   console.log(vsstxtvl);
-  console.log(vssavl[vssavl.length-15]+vssavl[vssavl.length-16]+vssavl[vssavl.length-17]+vssavl[vssavl.length-18]);
-  if(vssavl[vssavl.length-15]=='?Vs812s?'&&vssavl[vssavl.length-16]=='?Vs812s?'&&vssavl[vssavl.length-17]=='?Vs812s?'&&vssavl[vssavl.length-18]=='?Vs812s?')
-   {console.log('?Vs812s?'+'?'+vssidvl+'?');
+  console.log(vssavl[vssavl.length-18]+' '+vssavl[vssavl.length-17]+' '+vssavl[vssavl.length-16]+' '+vssavl[vssavl.length-15]);
+  if(vssavl[vssavl.length-15]=='????????????'&&vssavl[vssavl.length-16]=='????????'&&vssavl[vssavl.length-17]=='????????????'&&vssavl[vssavl.length-18]=='????????')
+   {console.log('?8??12?'+'?'+vssidvl+'?');
    vssbvl=true;}
   else{vssbvl = await db.vssaddf(vsstxtvl);
        console.log('?/vssupvssaddf'+vssbvl+'?');}
