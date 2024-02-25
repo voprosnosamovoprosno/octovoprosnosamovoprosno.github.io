@@ -36,15 +36,13 @@ module.exports = {
   },
   
   vssaddf: async vsstxtfp => {
-    let success = false;
+    let success;
     try {
       success = await db.run("INSERT INTO vsst (vsstxt) VALUES (?)", [
-        vsstxtfp
-      ]);
-    } catch (dbError) {
-      console.error(dbError);
-    }
-    return success.changes > 0 ? true : false;
+        vsstxtfp]);
+    } catch (dbError)
+       {console.error(dbError);}
+    return success.lastID;
   },
   
   vssdelf: async vssidfp => {
