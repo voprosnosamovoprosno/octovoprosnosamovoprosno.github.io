@@ -34,7 +34,7 @@ async function vssmsf()
         {vssdml=await db.vssdelf(vssgml[vssj].vssid);
          vssbvl=true;
          console.log('?vssqntdelid'+vssgml[vssj].vssid+vssdml+'?');
-        }else{if(vssgml[vssj].vsstxt[0]!='?')
+        }else{if(vssgml[vssj].vsstxt[0]!='?'/*||vssgml[vssj].vssid==466*/)
                {vssdml=await db.vssdelf(vssgml[vssj].vssid);
                 vssbvl=true;
                 console.log('?vsscntdelid'+vssgml[vssj].vssid+vssdml+'?');
