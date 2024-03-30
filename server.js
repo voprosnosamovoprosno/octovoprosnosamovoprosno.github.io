@@ -30,11 +30,11 @@ async function vssmsf()
     vssgml = await db.vssgetf();
     console.log('?vssgml.length'+vssgml.length+'?');
     for(let vssj=0;vssj<vssgml.length;vssj++)
-      {if(vssj<vssgml.length-12)
+      {if(vssj<vssgml.length-13)
         {vssdml=await db.vssdelf(vssgml[vssj].vssid);
          vssbvl=true;
          console.log('?vssqntdelid'+vssgml[vssj].vssid+vssdml+'?');
-        }else{if(vssgml[vssj].vsstxt[0]!='?'/*||vssgml[vssj].vssid==466*/)
+        }else{if(vssgml[vssj].vsstxt[0]!='?'/*||vssgml[vssj].vssid==563*/)
                {vssdml=await db.vssdelf(vssgml[vssj].vssid);
                 vssbvl=true;
                 console.log('?vsscntdelid'+vssgml[vssj].vssid+vssdml+'?');
@@ -65,8 +65,13 @@ fastify.post("/vssadd", async (request, reply) => {
   console.log(request.body);
   vssmsf();
 });
+fastify.post("/vssdel", async (request, reply) => {
+  let vssdml=await db.vssdelf(request.body);
+  console.log('?/vssdelvssdelf'+request.body+vssdml+'?');
+  vssmsf();
+});
 fastify.post("/vssup", async (request, reply) => {
-  let vssavl=request.body.split('\n');
+  /*let vssavl=request.body.split('\n');
   let vssidvl=vssavl[vssavl.length-1];
   vssavl.length=vssavl.length-1;
   let vsstxtvl=vssavl.join('\n')+'\n';
@@ -81,6 +86,7 @@ fastify.post("/vssup", async (request, reply) => {
   if(vssbvl){let vssdml=await db.vssdelf(vssidvl);
              console.log('?/vssupvssdelf'+vssidvl+vssdml+'?');}
   vssmsf();
+ */
 });
 fastify.get("/vssxs", async (request, reply) => {
   console.log('?vssxs?');
