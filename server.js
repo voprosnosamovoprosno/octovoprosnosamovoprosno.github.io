@@ -30,7 +30,7 @@ async function vssmsf()
     vssgml = await db.vssgetf();
     console.log('?vssgml.length'+vssgml.length+'?');
     for(let vssj=0;vssj<vssgml.length;vssj++)
-      {if(vssj<vssgml.length-13)
+      {if(vssj<vssgml.length-24)
         {vssdml=await db.vssdelf(vssgml[vssj].vssid);
          vssbvl=true;
          console.log('?vssqntdelid'+vssgml[vssj].vssid+vssdml+'?');
